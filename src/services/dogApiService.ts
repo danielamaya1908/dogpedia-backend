@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// Clave API proporcionada
 const API_KEY = 'live_iJzSEKvlHObcW6689LY7yT97Mr8uS7CpTnIUMCKS0oQL6pDysLIehU6ar1NC8FKy';
-const API_URL = 'https://api.thedogapi.com/v1/breeds'; // URL para obtener las razas de perros
+const API_URL = 'https://api.thedogapi.com/v1/breeds';
 
 export const fetchDogBreedsFromApi = async () => {
     try {

@@ -88,7 +88,7 @@ export const updateDogBreed = async (req: Request, res: Response) => {
         const updatedDogBreed = await DogBreed.findByIdAndUpdate(
             req.params.id,
             { name, image, temperament, lifeExpectancy, weight, height },
-            { new: true }  // Devolver el documento actualizado
+            { new: true } 
         );
 
         if (!updatedDogBreed) {

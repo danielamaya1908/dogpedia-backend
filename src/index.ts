@@ -1,7 +1,7 @@
 import express, { Application, Request, Response } from 'express';
-import connectDB from './config/db'; // Conexión a la base de datos
-import dogBreedRoutes from './routes/dogBreedRoutes'; // Rutas de razas de perros
-import cors from 'cors'; // Middleware para manejar CORS
+import connectDB from './config/db'; 
+import dogBreedRoutes from './routes/dogBreedRoutes'; 
+import cors from 'cors'; 
 
 const app: Application = express();
 const PORT = process.env.PORT || 3000;
@@ -11,9 +11,9 @@ connectDB();
 
 // Configurar CORS
 app.use(cors({
-    origin: 'http://localhost:3001', // Permitir solicitudes solo desde este origen
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
-    allowedHeaders: ['Content-Type'] // Encabezados permitidos
+    origin: 'http://localhost:3001', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    allowedHeaders: ['Content-Type'] 
 }));
 
 // Middleware para analizar el cuerpo de las solicitudes JSON
